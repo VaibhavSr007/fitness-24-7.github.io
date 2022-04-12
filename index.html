@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness 24/7</title>
+    <style>
+        body {
+            height: 2750px;
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            background-image: url('pic/new.jpeg') , url('pic/img2.jpg'), url('pic/bgim0.jpg'), url('pic/bgnew.jpg'), url(pic/bgnew.jpg);
+            background-position: top, center 785px, center 1570px ,bottom;
+            background-repeat: no-repeat;
+            background-size: 1400px 780px, 1400px 780px, 1400px 780px, 1400px 420px ;
+
+            
+        }
+
+        #btn {
+            position: absolute;
+            top: 35px;
+            left: 28px;
+            background-color: black;
+            color: rgb(245, 251, 251);
+            font-size: 22px;
+            animation-name: vab;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+        @keyframes vab{
+            from {
+                font-size: 22px;
+            }
+
+            to{
+                font-size: 30px;
+            }
+        }
+
+
+        #btn:hover {
+            font-size: 23px;
+            cursor: pointer;
+            color: brown;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            /* border: 2px solid red; */
+            width: 150px;
+            height: 90px;
+
+        }
+
+        .list {
+            margin: 4px;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+        }
+
+        a:hover {
+            font-size: 23px;
+            color: brown;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 18px;
+        }
+
+        .content{
+            /* border: 4px solid greenyellow; */
+            width: 600px;
+            position: absolute;
+            top: 290px;
+            animation-name: vab1;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
+        }
+
+        @keyframes vab1 {
+            from {
+                margin-left: 1400px;
+            }
+            
+            to {
+                margin-left: 0%;
+            }
+        } 
+
+        .content1{
+            width: 600px;
+            position: absolute;
+            top: 800px;
+            color: black;
+            transform: translateX(1500px);
+            animation: come-in 2s ease forwards;
+            animation-delay: 3s;
+        }
+
+        .come-in:nth-child(odd) {
+            animation-duration: 1s; /* So they look staggered */
+        }
+
+       @keyframes come-in {
+           to { transform: translateX(0px); }
+        }
+  
+        
+
+        #quote1 , #quote2{
+            font-size: 33px;
+        }
+
+        .content2{
+         position: absolute;
+         font-size: 45px;
+         top: 1620px;
+         left: 1050px;
+         color: rgb(14, 12, 12);
+         animation-name: vab3;
+         animation-duration: 1s;
+         animation-iteration-count: 1;
+         animation-delay: 6s;
+        }
+
+        @keyframes vab3{
+            0% {
+                left: 0px ;
+            }
+            100% {
+                left:1000px ;
+            }
+        }
+
+        .foot1{
+            position: absolute;
+            top: 2370px;
+            left: 120px;
+            color: black; 
+            text-align: center;
+        }
+
+        .list1{
+            text-align: left;
+            margin: 12px;
+            list-style: none;
+        }
+
+        #fthd{
+            font-size: 40px;
+        }
+
+        .foot2{
+            position: absolute;
+            top: 2479px;
+            left: 450px;
+        }
+        
+        .links{
+            color: black;
+        }
+        
+        .sm{
+            position: absolute;
+            top: 2600px;
+            left: 200px;  
+        }
+
+        .link1{
+            color: black;
+            padding: 12px;
+        }
+
+        .ip{
+            position: absolute;
+            top: 2450px;
+            left: 950px;
+            color: black;  
+        }
+
+        #ip{
+            font-size: 25px;
+            border-radius: 12px;
+        }
+
+        #sub{
+            font-size: 19px;
+            border-radius: 5px;
+        }
+
+        #sub:hover{
+            background-color: gray;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="pic\logo.png" alt="error loading">
+    </div>
+    <header>
+        <nav class="navbar">
+            <ul class="list">
+                <li class="list" id="l1"><a href=#>Home</a></li>
+                <li class="list" id="l2"><a href="#">About Us</a></li>
+                <li class="list" id="l3"><a href="#">Contact Us</a></li>
+                <li class="list" id="l4"><a href="#">More</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+         <h2 id="quote1">" The more you Sweat in Practice the less &nbsp; &nbsp; &nbsp; you Bleed in Battle "</h2>
+         <p>&nbsp; We provide our members, special world class training and routines which ultimately makes &nbsp; &nbsp; them feel right on top of evrey task they perform.  </p>
+    </div>
+     
+    <div class="content1">
+        <h2 id="quote2">" Yoga does not just changes the way one &nbsp; &nbsp; &nbsp;  see things,  it transforms the person who &nbsp; &nbsp; sees it "</h2>
+        <p>&nbsp; &nbsp; &nbsp;Special Yoga Meditation and Gymnasium Sessions are also available for full fledged  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;Cardio and Relaxation. </p>
+   </div>
+
+   <div class="content2">
+       <h1>
+           Let the Curves to turn in Cuts!!!
+       </h1>
+   </div>
+
+    <button id="btn" type="submit">Register Now!!!</button>
+<div class="mainft"> 
+    <div class="foot1">
+        <h2 id="fthd">Fitness 24/7</h2>
+        <li class="list1">fitness24/7@gmial.com</li>
+        <li class="list1">9747388333, 7563873278</li>
+        <li class="list1">13th Downing Street, Califonia</li>
+    </div>
+    <div class="foot2">
+        <li class="list2"><a class="links" href="#">About</a></li>
+        <li class="list2"><a class="links" href="#">Blogs</a></li>
+        <li class="list2"><a class="links" href="#">Contact</a></li>
+        <li class="list2"><a class="links" href="#">Register</a></li>
+    </div>
+    <p class="sm"><a class="link1" href="#">Instagram</a> <a class="link1" href="#">Facebook</a> <a class="link1" href="#">Twitter</a></p>
+    <div class="ip">
+    <h2>E-mail Address</h2> 
+    <input id="ip" type="email" placeholder="Enter your email"> <br>
+    <br>
+    <button id="sub" type="submit">Submit</button>
+    </div>
+</div>
+
+</body>
+
+</html> 
